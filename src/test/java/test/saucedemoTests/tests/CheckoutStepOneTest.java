@@ -7,7 +7,7 @@ import test.saucedemoTests.pages.*;
 public class CheckoutStepOneTest extends BaseTest {
     @Test
     public void firstNameTextBoxShouldBeDisplayedOnCheckoutStepOnePage(){
-        loginPage.login(validLogin, validPassword);
+        loginPage.login(VALID_LOGIN_PAGE_USERNAME, VALID_LOGIN_PAGE_PASSWORD);
 
         inventoryPage.clickOnGoodWithIndex(0);
         inventoryPage.clickOnGoodWithIndex(1);

@@ -1,6 +1,5 @@
 package main.locators;
 
-
 public class Main {
 
     public static void main() {
