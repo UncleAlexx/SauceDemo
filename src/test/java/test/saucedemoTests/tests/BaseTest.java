@@ -1,10 +1,8 @@
 package test.saucedemoTests.tests;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import test.saucedemoTests.DriverProvider;
 import test.saucedemoTests.pages.*;
 
 public abstract class BaseTest {
@@ -15,9 +13,9 @@ public abstract class BaseTest {
     protected static final String VALID_LOGIN_PAGE_PASSWORD = "secret_sauce";
     protected static final String INVALID_LOGIN_PAGE_USERNAME = "standard_user1";
     protected static final String INVALID_LOGIN_PAGE_PASSWORD = "secret_sauce1";
-    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_POST_CODE = "333333";
-    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_LOGIN = "secret_sauce";
-    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_PASSWORD = "standard_user1";
+    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_POSTAL_CODE = "333333";
+    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_FIRST_NAME = "Alexander";
+    protected static final String VALID_CHECKOUT_STEP_ONE_PAGE_LAST_NAME = "Gai";
     protected static final LoginPage loginPage;
     protected static final InventoryPage inventoryPage;
     protected static final CartPage  cartPage;
@@ -26,7 +24,7 @@ public abstract class BaseTest {
 
     static {
         EdgeOptions options = new EdgeOptions();
-        //options.addArguments(HEADLESS_EDGE_ARGUMENT);
+        options.addArguments(HEADLESS_EDGE_ARGUMENT);
         options.addArguments(START_MAXIMIZED_EDGE_ARGUMENT);
         DriverProvider.setInstance(new EdgeDriver(options));
 

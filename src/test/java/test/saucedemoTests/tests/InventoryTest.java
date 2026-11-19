@@ -2,7 +2,7 @@ package test.saucedemoTests.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import test.saucedemoTests.GoodsFilter;
+import test.saucedemoTests.tests.enums.GoodsFilter;
 
 public class InventoryTest extends BaseTest {
     @Test

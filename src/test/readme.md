@@ -1,4 +1,0 @@
-sdfsdf
-: s
-: d
-: ddd
